@@ -1,0 +1,175 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Emergency Hamburg", "BloodTheme")
+
+
+
+---MAIN
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Buy Stuff")
+
+
+MainSection:NewButton("Buy Glock 17", "Buys A Glock 17 From Dealer", function()
+  
+local args = {
+    [1] = "Glock 17",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+
+
+end)
+
+MainSection:NewButton("Buy M4 Carbine", "Buys M4 From Dealer", function()
+    
+local args = {
+    [1] = "M4 Carbine",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+
+end)
+
+
+MainSection:NewButton("Buy MP5", "Buys MP5 From Dealer", function()
+    
+local args = {
+    [1] = "MP5",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+end)
+
+
+
+MainSection:NewButton("Buy Bomb", "Buys Bomb From Dealer", function()
+   
+local args = {
+    [1] = "Bomb",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+
+
+end)
+
+
+
+MainSection:NewButton("Buys Metal Bat", "Buy Metal Bat From Dealer", function()
+    
+
+local args = {
+    [1] = "Metal Bat",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+
+end)
+
+
+MainSection:NewButton("Buy Sword", "Buys Sword From Dealer", function()
+    
+
+local args = {
+    [1] = "Sword",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Buy Bayonet", "Buys Bayonet From Dealer", function()
+  
+local args = {
+    [1] = "Bayonet",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Buy BaseBall Bat", "Buys BaseBall Bat", function()
+   
+local args = {
+    [1] = "Baseball Bat",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+end)
+
+
+MainSection:NewButton("Buy Machete", "Buys Machete From Dealer", function()
+    
+
+
+local args = {
+    [1] = "Machete",
+    [2] = "Dealer"
+}
+
+game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
+
+
+
+end)
+
+local MainSection = Main:NewSection("Sell")
+
+
+MainSection:NewButton("Sell Stolen Items", "Sells Gold Diamond Jewelry", function()
+    local args = {
+        [1] = "Jewelry",
+        [2] = "Dealer"
+    }
+    
+    game:GetService("ReplicatedStorage")["events-rx1"].sellItem:FireServer(unpack(args))
+    
+    
+    
+    
+    
+    
+    
+    local args = {
+        [1] = "Diamond",
+        [2] = "Smuggler"
+    }
+    
+    game:GetService("ReplicatedStorage")["events-rx1"].sellItem:FireServer(unpack(args))
+    
+    
+    local args = {
+        [1] = "Gold",
+        [2] = "Dealer"
+    }
+    
+    game:GetService("ReplicatedStorage")["events-rx1"].sellItem:FireServer(unpack(args))
+    
+    
+    
+    
+    
+end)
+
+local Player = Window:NewTab("Infinite Yield")
+local PlayerSection = Player:NewSection("Activate")
+
+PlayerSection:NewButton("Press", "Activates Infinite Yeild", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)

@@ -63,7 +63,7 @@ end)
 
 
 
-MainSection:NewButton("Buys Metal Bat", "Buy Metal Bat From Dealer", function()
+MainSection:NewButton("Buy Metal Bat", "Buy Metal Bat From Dealer", function()
     
 
 local args = {

@@ -3,7 +3,7 @@ local Window = Library.CreateLib("Emergency Hamburg", "BloodTheme")
 
 
 
----MAIN
+---MAI NA 
 
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Buy Stuff")
@@ -13,7 +13,8 @@ MainSection:NewButton("Buy Glock 17", "Buys A Glock 17 From Dealer", function()
   
 local args = {
     [1] = "Glock 17",
-    [2] = "Dealer"
+    [2] = "Dealer"que bom wusnbs
+nai wia iwnaian euajie
 }
 
 game:GetService("ReplicatedStorage")["events-rx1"].buyItem:FireServer(unpack(args))
